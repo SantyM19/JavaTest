@@ -17,9 +17,9 @@ public class App
 
     public static void main(String[] args) throws IOException {
         Long result = null;
-        Long result1;
-        Long result2;
-        Long result3;
+        Long result1 = null;
+        Long result2 = null;
+        Long result3 = null;
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -42,6 +42,9 @@ public class App
             System.out.println("Something went wrong, in this case with 0 in div.");
         }
 
-        System.out.println(number1 + " + " + number2 + " = " + result);
+        System.out.println(number1 + " + " + number2 + " = " + result + "\n" +
+                number1 + " - " + number2 + " = " + result1 + "\n" +
+                number1 + " * " + number2 + " = " + result2 + "\n" +
+                number1 + " / " + number2 + " = " + result3  );
     }
 }

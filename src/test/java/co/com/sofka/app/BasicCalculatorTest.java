@@ -26,6 +26,52 @@ public class BasicCalculatorTest {
             assertEquals(expectedValue, result);
         }
 
+
+        @Test
+        @DisplayName("Testing res: 1-1=0")
+        public void res() {
+            // Arrange
+            Long number1 = 1L;
+            Long number2 = 1L;
+            Long expectedValue = 0L;
+
+            // Act
+            Long result = basicCalculator.res(number1, number2);
+
+            // Assert
+            assertEquals(expectedValue, result);
+        }
+
+        @Test
+        @DisplayName("Testing mult: 1*1=1")
+        public void mul() {
+            // Arrange
+            Long number1 = 1L;
+            Long number2 = 1L;
+            Long expectedValue = 1L;
+
+            // Act
+            Long result = basicCalculator.mul(number1, number2);
+
+            // Assert
+            assertEquals(expectedValue, result);
+        }
+
+        @Test
+        @DisplayName("Testing div: 1/1=1")
+        public void div() {
+            // Arrange
+            Long number1 = 1L;
+            Long number2 = 1L;
+            Long expectedValue = 0L;
+
+            // Act
+            Long result = basicCalculator.div(number1, number2);
+
+            // Assert
+            assertEquals(expectedValue, result);
+        }
+
         @DisplayName("Testing several sums")
         @ParameterizedTest(name = "{0} + {1} = {2}")
         @CsvSource({
